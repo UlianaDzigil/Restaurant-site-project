@@ -11,7 +11,7 @@ import java.util.List;
 public class Dao {
     public List<Dish> getDishes(){
         final String url = "jdbc:postgresql://db:5432/favla";
-        final String sql = "SELECT * FROM dishes";
+        final String sql = "SELECT * FROM dishes;";
         final String user = "postgres";
         final String password = "postgres";
         ArrayList<Dish> dishes = new ArrayList<>();
